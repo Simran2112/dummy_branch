@@ -1,9 +1,11 @@
 name: Test
 
 on:
-  - pull_request
-  - push
-
+  workflow_run:
+    workflows:
+      - Preflight
+    types:
+      - completed
 jobs:
   test-job:
     name: Test Step
