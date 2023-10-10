@@ -8,7 +8,7 @@ on:
       - completed
 jobs:
   test-job:
-    name: Test Step 11
+    name: Test Step 12
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
